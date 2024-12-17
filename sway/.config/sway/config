@@ -65,7 +65,7 @@ scratchpad_minimize disable
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Wallpapers/ign_puppyInSpace.jpg fill
+output * bg ~/Wallpapers/ign_astronautInTheOcean.png fill
 #
 # Example configuration:
 #
