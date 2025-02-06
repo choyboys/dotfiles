@@ -188,7 +188,9 @@ output * bg ~/Wallpapers/ign_astronautInTheOcean.png fill
     bindsym XF86MonBrightnessUp exec brightnessctl s +10%
     bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 
-#
+# External monitor
+
+    output HDMI-A-1 scale 1.25
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
