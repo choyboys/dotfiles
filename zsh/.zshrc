@@ -103,5 +103,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#custom fucntions 
+
+# Function to show Docker containers
+docker_status() {
+    if ! docker info >/dev/null 2>&1; then
+        echo "🐳 Docker is not running"
+        return
+    fi
+    echo "🐳 Running Docker Containers:"
+    echo "----------------------------"
+    docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null || echo "No containers running"
+    echo ""
+}
+
+# Call the function when terminal starts
 fastfetch
+docker_status
 eval "$(starship init zsh)"
