@@ -122,3 +122,6 @@ docker_status() {
 fastfetch
 docker_status
 eval "$(starship init zsh)"
+
+# update PYTHONPATH for PCS
+export PYTHONPATH=/home/jared/SpeQtral/OGS/OGS_backend/components/pcs/src:/home/jared/SpeQtral/OGS/OGS_backend/components/pcs/src/include:$PYTHONPATH
